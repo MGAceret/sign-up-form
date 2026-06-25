@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+/* Norse Font */
+@font-face {
+    font-family: 'Norsebold';
+    src: url('../src/Norsebold.otf');
+}
+
 :root {
     --main-color: white;
     --sub-color: black;
@@ -18,30 +24,40 @@
 
 .left {
     height: 100vh;
-    width: 50vw;
+    width: 80vw;
 }
 
 .banner {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50vh;
+    margin-top: 50%;
     color: var(--main-color);
     background: var(--sub-color);
+    font-size: 32px;
+    font-family: 'Norsebold', 'Times New Roman', Times, serif;
+    padding: 40px 0 40px 0;
+}
+
+.banner img {
+    width: auto;
+    height: 25vh;
+    margin-right: 32px;
 }
 
 .right {
     height: 100vh;
     background: var(--bg-color);
-    padding: 80px;
+    padding: 130px;
 }
 
-.sign-up > div {
+.sign-up > div,
+.right > div:last-child{
     margin: 40px 0 40px 0;
 }
 
-.right > div:last-child {
-    margin: 40px 0 40px 0;
+.right > div:last-child button {
+    margin-bottom: 1vh;
 }
 
 form {
@@ -56,5 +72,5 @@ form div{
 }
 
 input {
-    width: 30vw;
+    width: 20vw;
 }
