@@ -15,6 +15,7 @@
     --main-color: white;
     --bg-color: rgb(200, 200, 200);
     --vertical-padding: 40px 0 40px 0;
+    --main-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container {
@@ -67,6 +68,7 @@
     height: 100vh;
     background: var(--bg-color);
     padding: 130px;
+    font-family: var(--main-font)
 }
 
 .sign-up > div {
@@ -92,6 +94,43 @@ form div{
     flex-direction: column;
 }
 
+label, button {
+    font-weight: bold;
+}
+
 input {
     width: 20vw;
+    height: 32px;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    font-family: var(--main-font);
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: blue;
+    outline: none;
+}
+
+input:user-invalid {
+    border-color: red;
+}
+
+button {
+    font-family: var(--main-font);
+    font-size: 24px;
+    padding: 15px 10px 15px 10px;
+    color: var(--main-color);
+    background: #759da5;
+    border: 0px;
+    border-radius: 10px;
+    width: 15vw;
+}
+
+button:active {
+    background: var(--main-color);
+    color: #759da5;
+    transition: 0.3s ease;
 }
